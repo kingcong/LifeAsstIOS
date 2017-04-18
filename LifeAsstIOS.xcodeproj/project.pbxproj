@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		735A69CE1E726E51006E3748 /* LATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 735A69CD1E726E51006E3748 /* LATabBarController.m */; };
 		735A69D11E726E6F006E3748 /* LANavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 735A69D01E726E6F006E3748 /* LANavgationController.m */; };
+		7376EAD31EA5C59500B3C8F7 /* NSDate+CWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EACE1EA5C59500B3C8F7 /* NSDate+CWExtension.m */; };
+		7376EAD41EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EAD01EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m */; };
+		7376EAD51EA5C59500B3C8F7 /* UIView+CWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EAD21EA5C59500B3C8F7 /* UIView+CWExtension.m */; };
+		7376EAD81EA5C9A400B3C8F7 /* LAHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EAD71EA5C9A400B3C8F7 /* LAHomeHeaderView.m */; };
+		7376EADA1EA5CA1700B3C8F7 /* LAHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7376EAD91EA5CA1700B3C8F7 /* LAHomeHeaderView.xib */; };
 		73865F071E6412C200ADC3BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73865F061E6412C200ADC3BA /* main.m */; };
 		73865F0A1E6412C200ADC3BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73865F091E6412C200ADC3BA /* AppDelegate.m */; };
 		73865F121E6412C200ADC3BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73865F111E6412C200ADC3BA /* Assets.xcassets */; };
@@ -50,6 +55,16 @@
 		735A69CD1E726E51006E3748 /* LATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LATabBarController.m; sourceTree = "<group>"; };
 		735A69CF1E726E6F006E3748 /* LANavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LANavgationController.h; sourceTree = "<group>"; };
 		735A69D01E726E6F006E3748 /* LANavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LANavgationController.m; sourceTree = "<group>"; };
+		7376EACA1EA5C39D00B3C8F7 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7376EACD1EA5C59500B3C8F7 /* NSDate+CWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CWExtension.h"; sourceTree = "<group>"; };
+		7376EACE1EA5C59500B3C8F7 /* NSDate+CWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CWExtension.m"; sourceTree = "<group>"; };
+		7376EACF1EA5C59500B3C8F7 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		7376EAD01EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		7376EAD11EA5C59500B3C8F7 /* UIView+CWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CWExtension.h"; sourceTree = "<group>"; };
+		7376EAD21EA5C59500B3C8F7 /* UIView+CWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CWExtension.m"; sourceTree = "<group>"; };
+		7376EAD61EA5C9A400B3C8F7 /* LAHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAHomeHeaderView.h; sourceTree = "<group>"; };
+		7376EAD71EA5C9A400B3C8F7 /* LAHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAHomeHeaderView.m; sourceTree = "<group>"; };
+		7376EAD91EA5CA1700B3C8F7 /* LAHomeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAHomeHeaderView.xib; sourceTree = "<group>"; };
 		73865F021E6412C200ADC3BA /* LifeAsstIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeAsstIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73865F061E6412C200ADC3BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73865F081E6412C200ADC3BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +133,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7376EACB1EA5C59500B3C8F7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				7376EACC1EA5C59500B3C8F7 /* Category */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		7376EACC1EA5C59500B3C8F7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7376EACD1EA5C59500B3C8F7 /* NSDate+CWExtension.h */,
+				7376EACE1EA5C59500B3C8F7 /* NSDate+CWExtension.m */,
+				7376EACF1EA5C59500B3C8F7 /* UIBarButtonItem+Extension.h */,
+				7376EAD01EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m */,
+				7376EAD11EA5C59500B3C8F7 /* UIView+CWExtension.h */,
+				7376EAD21EA5C59500B3C8F7 /* UIView+CWExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		73865EF91E6412C100ADC3BA = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +179,7 @@
 		73865F041E6412C200ADC3BA /* LifeAsstIOS */ = {
 			isa = PBXGroup;
 			children = (
+				7376EACB1EA5C59500B3C8F7 /* Other */,
 				73865F481E6567F700ADC3BA /* Friend */,
 				73865F4C1E6567F700ADC3BA /* Home */,
 				73865F501E6567F700ADC3BA /* Login */,
@@ -154,6 +191,7 @@
 				73865F111E6412C200ADC3BA /* Assets.xcassets */,
 				73865F131E6412C200ADC3BA /* LaunchScreen.storyboard */,
 				73865F161E6412C200ADC3BA /* Info.plist */,
+				7376EACA1EA5C39D00B3C8F7 /* PrefixHeader.pch */,
 				73865F051E6412C200ADC3BA /* Supporting Files */,
 			);
 			path = LifeAsstIOS;
@@ -248,6 +286,9 @@
 		73865F4F1E6567F700ADC3BA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7376EAD61EA5C9A400B3C8F7 /* LAHomeHeaderView.h */,
+				7376EAD71EA5C9A400B3C8F7 /* LAHomeHeaderView.m */,
+				7376EAD91EA5CA1700B3C8F7 /* LAHomeHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -512,6 +553,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7376EADA1EA5CA1700B3C8F7 /* LAHomeHeaderView.xib in Resources */,
 				73865F791E6657EE00ADC3BA /* LAMineViewController.xib in Resources */,
 				73865F151E6412C200ADC3BA /* LaunchScreen.storyboard in Resources */,
 				73865F671E65685D00ADC3BA /* LALoginController.xib in Resources */,
@@ -590,12 +632,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7376EAD41EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m in Sources */,
+				7376EAD81EA5C9A400B3C8F7 /* LAHomeHeaderView.m in Sources */,
 				735A69D11E726E6F006E3748 /* LANavgationController.m in Sources */,
 				73865F701E6657C700ADC3BA /* LANearbyViewController.m in Sources */,
 				73865F661E65685D00ADC3BA /* LALoginController.m in Sources */,
 				73865F621E65683E00ADC3BA /* LASuperViewController.m in Sources */,
+				7376EAD51EA5C59500B3C8F7 /* UIView+CWExtension.m in Sources */,
 				73865F741E6657DD00ADC3BA /* LAFriendViewController.m in Sources */,
 				73865F0A1E6412C200ADC3BA /* AppDelegate.m in Sources */,
+				7376EAD31EA5C59500B3C8F7 /* NSDate+CWExtension.m in Sources */,
 				73865F071E6412C200ADC3BA /* main.m in Sources */,
 				73865F781E6657EE00ADC3BA /* LAMineViewController.m in Sources */,
 				73865F6B1E6657A500ADC3BA /* LAHomeViewController.m in Sources */,
@@ -742,6 +788,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NU8CMWBW53;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LifeAsstIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.LifeAsstIOS;
@@ -755,6 +802,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NU8CMWBW53;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LifeAsstIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.LifeAsstIOS;

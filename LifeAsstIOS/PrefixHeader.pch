@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by kingcong on 16/2/2.
+//  Copyright (c) 2016年 kingcong. All rights reserved.
+//
+
+#ifndef ______PrefixHeader_pch
+#define ______PrefixHeader_pch
+
+#import "UIView+CWExtension.h"
+#import "UIBarButtonItem+Extension.h"
+//#import "CWConst.h"
+
+#ifdef DEBUG
+#define CWLog(...) NSLog(__VA_ARGS__)
+#else
+#define CWLog(...)
+#endif
+
+#define CWLogFunc CWLog(@"%s", __func__)
+
+#define CWRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0];
+
+#define CWGlobalBg CWRGBColor(223,223,223)
+
+#endif
