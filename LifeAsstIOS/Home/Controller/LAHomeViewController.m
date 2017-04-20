@@ -8,6 +8,9 @@
 
 #import "LAHomeViewController.h"
 #import "LAHomeHeaderView.h"
+#import "LAHomeTableCell.h"
+
+static NSString * const LAHomeTableCellID = @"LAHomeTableCell";
 
 @interface LAHomeViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -28,6 +31,10 @@
 {
     LAHomeHeaderView *headerView = [LAHomeHeaderView headerView];
     self.tableView.tableHeaderView = headerView;
+    
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LAHomeTableCell class]) bundle:nil] forCellReuseIdentifier:LAHomeTableCellID];
+
+    self.tableView.rowHeight = 90;
 }
 
 #pragma mark - tableView数据源方法和代理方法
@@ -44,10 +51,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    cell.textLabel.text = @"sd";
-    
+    LAHomeTableCell *cell = [tableView dequeueReusableCellWithIdentifier:LAHomeTableCellID];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 @end

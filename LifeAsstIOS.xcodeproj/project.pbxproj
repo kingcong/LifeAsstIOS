@@ -14,6 +14,9 @@
 		7376EAD51EA5C59500B3C8F7 /* UIView+CWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EAD21EA5C59500B3C8F7 /* UIView+CWExtension.m */; };
 		7376EAD81EA5C9A400B3C8F7 /* LAHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EAD71EA5C9A400B3C8F7 /* LAHomeHeaderView.m */; };
 		7376EADA1EA5CA1700B3C8F7 /* LAHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7376EAD91EA5CA1700B3C8F7 /* LAHomeHeaderView.xib */; };
+		7376EADE1EA5D11400B3C8F7 /* LAHomeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EADC1EA5D11400B3C8F7 /* LAHomeTableCell.m */; };
+		7376EADF1EA5D11400B3C8F7 /* LAHomeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7376EADD1EA5D11400B3C8F7 /* LAHomeTableCell.xib */; };
+		7376EAE21EA5D86300B3C8F7 /* LAFriendDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EAE11EA5D86300B3C8F7 /* LAFriendDetailController.m */; };
 		73865F071E6412C200ADC3BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73865F061E6412C200ADC3BA /* main.m */; };
 		73865F0A1E6412C200ADC3BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73865F091E6412C200ADC3BA /* AppDelegate.m */; };
 		73865F121E6412C200ADC3BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73865F111E6412C200ADC3BA /* Assets.xcassets */; };
@@ -65,6 +68,11 @@
 		7376EAD61EA5C9A400B3C8F7 /* LAHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAHomeHeaderView.h; sourceTree = "<group>"; };
 		7376EAD71EA5C9A400B3C8F7 /* LAHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAHomeHeaderView.m; sourceTree = "<group>"; };
 		7376EAD91EA5CA1700B3C8F7 /* LAHomeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAHomeHeaderView.xib; sourceTree = "<group>"; };
+		7376EADB1EA5D11400B3C8F7 /* LAHomeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAHomeTableCell.h; sourceTree = "<group>"; };
+		7376EADC1EA5D11400B3C8F7 /* LAHomeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAHomeTableCell.m; sourceTree = "<group>"; };
+		7376EADD1EA5D11400B3C8F7 /* LAHomeTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAHomeTableCell.xib; sourceTree = "<group>"; };
+		7376EAE01EA5D86300B3C8F7 /* LAFriendDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAFriendDetailController.h; sourceTree = "<group>"; };
+		7376EAE11EA5D86300B3C8F7 /* LAFriendDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAFriendDetailController.m; sourceTree = "<group>"; };
 		73865F021E6412C200ADC3BA /* LifeAsstIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeAsstIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73865F061E6412C200ADC3BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73865F081E6412C200ADC3BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -238,6 +246,8 @@
 			children = (
 				73865F721E6657DD00ADC3BA /* LAFriendViewController.h */,
 				73865F731E6657DD00ADC3BA /* LAFriendViewController.m */,
+				7376EAE01EA5D86300B3C8F7 /* LAFriendDetailController.h */,
+				7376EAE11EA5D86300B3C8F7 /* LAFriendDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,6 +299,9 @@
 				7376EAD61EA5C9A400B3C8F7 /* LAHomeHeaderView.h */,
 				7376EAD71EA5C9A400B3C8F7 /* LAHomeHeaderView.m */,
 				7376EAD91EA5CA1700B3C8F7 /* LAHomeHeaderView.xib */,
+				7376EADB1EA5D11400B3C8F7 /* LAHomeTableCell.h */,
+				7376EADC1EA5D11400B3C8F7 /* LAHomeTableCell.m */,
+				7376EADD1EA5D11400B3C8F7 /* LAHomeTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -555,6 +568,7 @@
 			files = (
 				7376EADA1EA5CA1700B3C8F7 /* LAHomeHeaderView.xib in Resources */,
 				73865F791E6657EE00ADC3BA /* LAMineViewController.xib in Resources */,
+				7376EADF1EA5D11400B3C8F7 /* LAHomeTableCell.xib in Resources */,
 				73865F151E6412C200ADC3BA /* LaunchScreen.storyboard in Resources */,
 				73865F671E65685D00ADC3BA /* LALoginController.xib in Resources */,
 				73865F6C1E6657A500ADC3BA /* LAHomeViewController.xib in Resources */,
@@ -633,11 +647,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7376EAD41EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m in Sources */,
+				7376EAE21EA5D86300B3C8F7 /* LAFriendDetailController.m in Sources */,
 				7376EAD81EA5C9A400B3C8F7 /* LAHomeHeaderView.m in Sources */,
 				735A69D11E726E6F006E3748 /* LANavgationController.m in Sources */,
 				73865F701E6657C700ADC3BA /* LANearbyViewController.m in Sources */,
 				73865F661E65685D00ADC3BA /* LALoginController.m in Sources */,
 				73865F621E65683E00ADC3BA /* LASuperViewController.m in Sources */,
+				7376EADE1EA5D11400B3C8F7 /* LAHomeTableCell.m in Sources */,
 				7376EAD51EA5C59500B3C8F7 /* UIView+CWExtension.m in Sources */,
 				73865F741E6657DD00ADC3BA /* LAFriendViewController.m in Sources */,
 				73865F0A1E6412C200ADC3BA /* AppDelegate.m in Sources */,
