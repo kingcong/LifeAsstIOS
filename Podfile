@@ -4,5 +4,6 @@ target "LifeAsstIOS" do
      pod 'MJRefresh'
      pod 'SVProgressHUD'
      pod 'BaiduMapKit'
+     pod 'Masonry'
 
 end

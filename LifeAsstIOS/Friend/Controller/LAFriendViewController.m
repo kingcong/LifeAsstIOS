@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupNav];
+//    [self setupNav];
     
     // 初始化子控制器
     [self setupChildVces];

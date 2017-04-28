@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LALoginController.h"
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import "CWNewfeatureViewController.h"
 
 @interface AppDelegate () <BMKGeneralDelegate>
 
@@ -45,6 +46,7 @@ BMKMapManager* _mapManager;
     [self.window makeKeyAndVisible];
     
     LALoginController *vc = [[LALoginController alloc] init];
+//    CWNewfeatureViewController *vc = [[CWNewfeatureViewController alloc] init];
     self.window.rootViewController = vc;
     
     return YES;

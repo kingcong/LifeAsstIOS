@@ -19,6 +19,9 @@
 #import "MBProgressHUD+SR.h"
 #import "UIView+CWExtension.h"
 #import "UIBarButtonItem+Extension.h"
+#import "UtilsHeader.h"
+#import "WKWebViewController.h"
+#import "UIImage+Extension.h"
 #endif
 
 #ifdef DEBUG
@@ -50,5 +53,10 @@ fprintf(stderr,"[%s:%d %s] %s\n", [[[NSString stringWithUTF8String:__FILE__] las
 #define CWRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0];
 
 #define CWGlobalBg CWRGBColor(223,223,223)
+
+#define IOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+
+#define LAUserLocationInfo @"LAUserLocationInfo"
 
 #endif

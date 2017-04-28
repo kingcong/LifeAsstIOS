@@ -14,6 +14,8 @@
 #import "LAMineViewController.h"
 #import "MainViewController.h"
 
+#import "CWProfileViewController.h"
+
 @interface LATabBarController ()
 
 @end
@@ -43,7 +45,7 @@
     
     [self setupChildVc:[[LAFriendViewController alloc] init] title:@"朋友圈" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
-    [self setupChildVc:[[MainViewController alloc] init] title:@"我的" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    [self setupChildVc:[[CWProfileViewController alloc] init] title:@"我的" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
     
     // 替换系统的tabBar
 //    [self setValue:[[CWTabBar alloc] init] forKeyPath:@"tabBar"];

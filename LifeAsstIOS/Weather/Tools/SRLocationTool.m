@@ -181,6 +181,7 @@ static SRLocationTool *instance;
                            cityid = [SRWeatherCityTool cityidOfCityname:cityname];
                        }
                        SRLog(@"addressDic: %@", addressDic);
+                       [[NSUserDefaults standardUserDefaults] setObject:addressDic forKey:LAUserLocationInfo];
                        SRLog(@"cityid: %@", cityid);
                        SRLog(@"cityname: %@", cityname);
                        SRLog(@"state: %@", state);

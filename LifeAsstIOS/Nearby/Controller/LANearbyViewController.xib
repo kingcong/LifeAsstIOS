@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LANearbyViewController">
             <connections>
                 <outlet property="mapView" destination="0Re-qj-que" id="Cp5-YD-7eM"/>
-                <outlet property="segment" destination="VRf-Yw-AXZ" id="5FO-OX-NqP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,26 +22,73 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Re-qj-que" customClass="BMKMapView">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <subviews>
-                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VRf-Yw-AXZ">
-                            <rect key="frame" x="115" y="53" width="121" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="First"/>
-                                <segment title="Second"/>
-                            </segments>
-                        </segmentedControl>
-                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYL-64-V7e">
+                    <rect key="frame" x="30" y="567" width="315" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36P-hx-QfL">
+                            <rect key="frame" x="20" y="5" width="62" height="30"/>
+                            <state key="normal" title="路线规划"/>
+                            <connections>
+                                <action selector="roadGuide:" destination="-1" eventType="touchUpInside" id="LHq-ym-UP0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cD7-rC-CqA">
+                            <rect key="frame" x="233" y="5" width="62" height="30"/>
+                            <state key="normal" title="公交查询"/>
+                            <connections>
+                                <action selector="busQuery:" destination="-1" eventType="touchUpInside" id="F8s-I9-QCO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4F-8z-0yv">
+                            <rect key="frame" x="126" y="5" width="62" height="30"/>
+                            <state key="normal" title="区域查询"/>
+                            <connections>
+                                <action selector="districtSearch:" destination="-1" eventType="touchUpInside" id="8u7-l6-f0a"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98233557959999995" green="1" blue="0.68659004400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="A4F-8z-0yv" firstAttribute="centerX" secondItem="xYL-64-V7e" secondAttribute="centerX" id="Bz6-kV-uAi"/>
+                        <constraint firstAttribute="trailing" secondItem="cD7-rC-CqA" secondAttribute="trailing" constant="20" id="J9m-0z-tsn"/>
+                        <constraint firstItem="36P-hx-QfL" firstAttribute="centerY" secondItem="xYL-64-V7e" secondAttribute="centerY" id="SHB-Ih-cee"/>
+                        <constraint firstItem="A4F-8z-0yv" firstAttribute="centerY" secondItem="xYL-64-V7e" secondAttribute="centerY" id="a2K-Ge-r4W"/>
+                        <constraint firstItem="cD7-rC-CqA" firstAttribute="centerY" secondItem="xYL-64-V7e" secondAttribute="centerY" id="a5j-Fs-a0P"/>
+                        <constraint firstItem="36P-hx-QfL" firstAttribute="leading" secondItem="xYL-64-V7e" secondAttribute="leading" constant="20" id="hD0-kY-Fa2"/>
+                        <constraint firstAttribute="height" constant="40" id="pSX-Vn-Dpn"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0q-W5-UP2">
+                    <rect key="frame" x="25" y="532" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.074343003369999994" blue="0.112278286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="00u-6S-V6S"/>
+                        <constraint firstAttribute="height" constant="30" id="Ba8-do-IH0"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.074343003369999994" blue="0.112278286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startLocating:" destination="-1" eventType="touchUpInside" id="gwa-WV-wBF"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="0Re-qj-que" secondAttribute="bottom" id="K05-wJ-cFi"/>
+                <constraint firstItem="Y0q-W5-UP2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="azz-NV-MgG"/>
+                <constraint firstAttribute="trailing" secondItem="xYL-64-V7e" secondAttribute="trailing" constant="30" id="deO-lp-nY0"/>
+                <constraint firstAttribute="bottom" secondItem="xYL-64-V7e" secondAttribute="bottom" constant="60" id="eHS-H7-cw4"/>
+                <constraint firstItem="0Re-qj-que" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fuo-Ax-fLS"/>
+                <constraint firstAttribute="bottom" secondItem="Y0q-W5-UP2" secondAttribute="bottom" constant="105" id="mRw-IP-a7d"/>
                 <constraint firstAttribute="trailing" secondItem="0Re-qj-que" secondAttribute="trailing" id="mYa-KJ-9Rn"/>
+                <constraint firstItem="xYL-64-V7e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="oTS-lh-ob6"/>
                 <constraint firstItem="0Re-qj-que" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pe4-69-ecG"/>
-                <constraint firstItem="0Re-qj-que" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uij-Sg-mhV"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-32" y="59"/>
         </view>
     </objects>
 </document>

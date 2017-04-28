@@ -165,6 +165,22 @@
     [self beginLocation];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // 设置导航条透明
+    [[[self.navigationController.navigationBar subviews] objectAtIndex:0] setAlpha:0];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    // 设置导航条透明
+    [[[self.navigationController.navigationBar subviews] objectAtIndex:0] setAlpha:1.0];
+}
+
 - (void)beginLocation {
     
     [SRLocationTool sharedInstance].delegate = self;
@@ -174,6 +190,7 @@
             [[SRLocationTool sharedInstance] beginLocation];
             
             NSString *city = [SRLocationTool sharedInstance].currentLocationCity;
+            NSLog(@"city:%@",city);
             NSString *cityid = [SRWeatherCityTool cityidOfCityname:city];
             if (city && cityid) {
                 [self loadWeatherDataOfCity:city cityid:cityid];
@@ -554,7 +571,7 @@
 
 - (void)locationToolLocationServicesLocating {
     
-    [MBProgressHUD sr_showIndeterminateWithMessage:@"正在定位..."];
+//    [MBProgressHUD sr_showIndeterminateWithMessage:@"正在定位..."];
 }
 
 - (void)locationToolLocationSuccess {
