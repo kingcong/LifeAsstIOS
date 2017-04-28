@@ -8,6 +8,11 @@
 
 #import "LAFriendViewController.h"
 #import "LAFriendDetailController.h"
+#import "LAFriendHeaderView.h"
+#import "LASplitViewController.h"
+#import "LADailyViewController.h"
+
+#define kHeaderViewHeight 80
 
 @interface LAFriendViewController ()
 
@@ -31,6 +36,8 @@
     
 //    [self setupNav];
     
+    [self setupHeaderView];
+    
     // 初始化子控制器
     [self setupChildVces];
     
@@ -40,15 +47,22 @@
     
 }
 
+- (void)setupHeaderView
+{
+    LAFriendHeaderView *headerView = [LAFriendHeaderView headerView];
+    headerView.frame = CGRectMake(0, 64, kScreenWidth, kHeaderViewHeight);
+    [self.view addSubview:headerView];
+}
+
 /**
  * 初始化子控制器
  */
 - (void)setupChildVces
 {
-   LAFriendDetailController *all = [[LAFriendDetailController alloc] init];
+   LASplitViewController *all = [[LASplitViewController alloc] init];
     [self addChildViewController:all];
     
-   LAFriendDetailController *video = [[LAFriendDetailController alloc] init];
+   LADailyViewController *video = [[LADailyViewController alloc] init];
     [self addChildViewController:video];
     
    LAFriendDetailController *voice = [[LAFriendDetailController alloc] init];
@@ -57,8 +71,6 @@
    LAFriendDetailController *picture = [[LAFriendDetailController alloc] init];
     [self addChildViewController:picture];
     
-   LAFriendDetailController *word = [[LAFriendDetailController alloc] init];
-    [self addChildViewController:word];
 }
 
 /**
@@ -71,7 +83,7 @@
     titlesView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.7];
     titlesView.width = self.view.width;
     titlesView.height = 35;
-    titlesView.y = 64;
+    titlesView.y = 64 + kHeaderViewHeight + 5;
     [self.view addSubview:titlesView];
     self.titlesView = titlesView;
     
@@ -84,7 +96,7 @@
     self.indicatorView = indicatorView;
     
     // 内部的子标签
-    NSArray *titles = @[@"全部", @"视频", @"声音", @"图片", @"段子"];
+    NSArray *titles = @[@"吐槽", @"推荐", @"失物招领", @"求助"];
     CGFloat width = titlesView.width / titles.count;
     CGFloat height = titlesView.height;
     for (NSInteger i = 0; i<titles.count; i++) {

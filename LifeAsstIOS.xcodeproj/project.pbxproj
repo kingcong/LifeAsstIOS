@@ -51,6 +51,18 @@
 		73189AD21EB36A9000EBCD13 /* BusLineSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73189ACE1EB36A9000EBCD13 /* BusLineSearchViewController.xib */; };
 		73189AD91EB36B8700EBCD13 /* DistrictSearchDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73189AD61EB36B8700EBCD13 /* DistrictSearchDemoViewController.mm */; };
 		73189ADB1EB36C3500EBCD13 /* DistrictSearchDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73189ADA1EB36C3500EBCD13 /* DistrictSearchDemoViewController.xib */; };
+		73189AE01EB38DD200EBCD13 /* LAFriendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73189ADF1EB38DD200EBCD13 /* LAFriendHeaderView.m */; };
+		73189AE21EB38DE100EBCD13 /* LAFriendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73189AE11EB38DE100EBCD13 /* LAFriendHeaderView.xib */; };
+		73189AEA1EB3923900EBCD13 /* LASplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73189AE81EB3923900EBCD13 /* LASplitViewController.m */; };
+		73189AEB1EB3923900EBCD13 /* LASplitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73189AE91EB3923900EBCD13 /* LASplitViewController.xib */; };
+		73189AEF1EB3948900EBCD13 /* LASplitViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73189AED1EB3948900EBCD13 /* LASplitViewCell.m */; };
+		73189AF01EB3948900EBCD13 /* LASplitViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73189AEE1EB3948900EBCD13 /* LASplitViewCell.xib */; };
+		73189AF81EB3967700EBCD13 /* LADailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73189AF61EB3967700EBCD13 /* LADailyViewController.m */; };
+		73189AF91EB3967700EBCD13 /* LADailyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73189AF71EB3967700EBCD13 /* LADailyViewController.xib */; };
+		73189AFD1EB39A7A00EBCD13 /* LADailyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73189AFB1EB39A7A00EBCD13 /* LADailyViewCell.m */; };
+		73189AFE1EB39A7A00EBCD13 /* LADailyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73189AFC1EB39A7A00EBCD13 /* LADailyViewCell.xib */; };
+		73189B011EB39D4300EBCD13 /* LAMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73189B001EB39D4300EBCD13 /* LAMineHeaderView.m */; };
+		73189B031EB39D5700EBCD13 /* LAMineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73189B021EB39D5700EBCD13 /* LAMineHeaderView.xib */; };
 		735A69CE1E726E51006E3748 /* LATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 735A69CD1E726E51006E3748 /* LATabBarController.m */; };
 		735A69D11E726E6F006E3748 /* LANavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 735A69D01E726E6F006E3748 /* LANavgationController.m */; };
 		7376EAD31EA5C59500B3C8F7 /* NSDate+CWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EACE1EA5C59500B3C8F7 /* NSDate+CWExtension.m */; };
@@ -243,6 +255,24 @@
 		73189AD51EB36B8700EBCD13 /* DistrictSearchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistrictSearchDemoViewController.h; sourceTree = "<group>"; };
 		73189AD61EB36B8700EBCD13 /* DistrictSearchDemoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DistrictSearchDemoViewController.mm; sourceTree = "<group>"; };
 		73189ADA1EB36C3500EBCD13 /* DistrictSearchDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistrictSearchDemoViewController.xib; sourceTree = "<group>"; };
+		73189ADE1EB38DD200EBCD13 /* LAFriendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAFriendHeaderView.h; sourceTree = "<group>"; };
+		73189ADF1EB38DD200EBCD13 /* LAFriendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAFriendHeaderView.m; sourceTree = "<group>"; };
+		73189AE11EB38DE100EBCD13 /* LAFriendHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAFriendHeaderView.xib; sourceTree = "<group>"; };
+		73189AE71EB3923900EBCD13 /* LASplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LASplitViewController.h; sourceTree = "<group>"; };
+		73189AE81EB3923900EBCD13 /* LASplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LASplitViewController.m; sourceTree = "<group>"; };
+		73189AE91EB3923900EBCD13 /* LASplitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LASplitViewController.xib; sourceTree = "<group>"; };
+		73189AEC1EB3948900EBCD13 /* LASplitViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LASplitViewCell.h; sourceTree = "<group>"; };
+		73189AED1EB3948900EBCD13 /* LASplitViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LASplitViewCell.m; sourceTree = "<group>"; };
+		73189AEE1EB3948900EBCD13 /* LASplitViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LASplitViewCell.xib; sourceTree = "<group>"; };
+		73189AF51EB3967700EBCD13 /* LADailyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LADailyViewController.h; sourceTree = "<group>"; };
+		73189AF61EB3967700EBCD13 /* LADailyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LADailyViewController.m; sourceTree = "<group>"; };
+		73189AF71EB3967700EBCD13 /* LADailyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LADailyViewController.xib; sourceTree = "<group>"; };
+		73189AFA1EB39A7A00EBCD13 /* LADailyViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LADailyViewCell.h; sourceTree = "<group>"; };
+		73189AFB1EB39A7A00EBCD13 /* LADailyViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LADailyViewCell.m; sourceTree = "<group>"; };
+		73189AFC1EB39A7A00EBCD13 /* LADailyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LADailyViewCell.xib; sourceTree = "<group>"; };
+		73189AFF1EB39D4300EBCD13 /* LAMineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMineHeaderView.h; sourceTree = "<group>"; };
+		73189B001EB39D4300EBCD13 /* LAMineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMineHeaderView.m; sourceTree = "<group>"; };
+		73189B021EB39D5700EBCD13 /* LAMineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMineHeaderView.xib; sourceTree = "<group>"; };
 		735A69CC1E726E51006E3748 /* LATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LATabBarController.h; sourceTree = "<group>"; };
 		735A69CD1E726E51006E3748 /* LATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LATabBarController.m; sourceTree = "<group>"; };
 		735A69CF1E726E6F006E3748 /* LANavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LANavgationController.h; sourceTree = "<group>"; };
@@ -711,6 +741,80 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		73189AE31EB3921E00EBCD13 /* Split */ = {
+			isa = PBXGroup;
+			children = (
+				73189AE41EB3921E00EBCD13 /* Controller */,
+				73189AE51EB3921E00EBCD13 /* Model */,
+				73189AE61EB3921E00EBCD13 /* View */,
+			);
+			path = Split;
+			sourceTree = "<group>";
+		};
+		73189AE41EB3921E00EBCD13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73189AE71EB3923900EBCD13 /* LASplitViewController.h */,
+				73189AE81EB3923900EBCD13 /* LASplitViewController.m */,
+				73189AE91EB3923900EBCD13 /* LASplitViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73189AE51EB3921E00EBCD13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73189AE61EB3921E00EBCD13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				73189AEC1EB3948900EBCD13 /* LASplitViewCell.h */,
+				73189AED1EB3948900EBCD13 /* LASplitViewCell.m */,
+				73189AEE1EB3948900EBCD13 /* LASplitViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73189AF11EB3962500EBCD13 /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+				73189AF21EB3962500EBCD13 /* Controller */,
+				73189AF31EB3962500EBCD13 /* Model */,
+				73189AF41EB3962500EBCD13 /* View */,
+			);
+			path = Daily;
+			sourceTree = "<group>";
+		};
+		73189AF21EB3962500EBCD13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73189AF51EB3967700EBCD13 /* LADailyViewController.h */,
+				73189AF61EB3967700EBCD13 /* LADailyViewController.m */,
+				73189AF71EB3967700EBCD13 /* LADailyViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73189AF31EB3962500EBCD13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73189AF41EB3962500EBCD13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				73189AFA1EB39A7A00EBCD13 /* LADailyViewCell.h */,
+				73189AFB1EB39A7A00EBCD13 /* LADailyViewCell.m */,
+				73189AFC1EB39A7A00EBCD13 /* LADailyViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7376EACB1EA5C59500B3C8F7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -809,6 +913,8 @@
 		73865F481E6567F700ADC3BA /* Friend */ = {
 			isa = PBXGroup;
 			children = (
+				73189AF11EB3962500EBCD13 /* Daily */,
+				73189AE31EB3921E00EBCD13 /* Split */,
 				73865F491E6567F700ADC3BA /* Controller */,
 				73865F4A1E6567F700ADC3BA /* Model */,
 				73865F4B1E6567F700ADC3BA /* View */,
@@ -837,6 +943,9 @@
 		73865F4B1E6567F700ADC3BA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				73189ADE1EB38DD200EBCD13 /* LAFriendHeaderView.h */,
+				73189ADF1EB38DD200EBCD13 /* LAFriendHeaderView.m */,
+				73189AE11EB38DE100EBCD13 /* LAFriendHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1006,6 +1115,9 @@
 		73865F5B1E6567F800ADC3BA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				73189AFF1EB39D4300EBCD13 /* LAMineHeaderView.h */,
+				73189B001EB39D4300EBCD13 /* LAMineHeaderView.m */,
+				73189B021EB39D5700EBCD13 /* LAMineHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1409,8 +1521,10 @@
 				73943BDA1EAF9F0E00677F2B /* background_rainy.jpeg in Resources */,
 				73943BDC1EAF9F0E00677F2B /* background_sunny.jpeg in Resources */,
 				73189A4A1EB2D8E800EBCD13 /* XMGPageView.xib in Resources */,
+				73189AE21EB38DE100EBCD13 /* LAFriendHeaderView.xib in Resources */,
 				73189AC91EB3697900EBCD13 /* icon_search_bg@2x.png in Resources */,
 				73865F151E6412C200ADC3BA /* LaunchScreen.storyboard in Resources */,
+				73189AFE1EB39A7A00EBCD13 /* LADailyViewCell.xib in Resources */,
 				73943BCD1EAF9EBD00677F2B /* unicode_to_hanyu_pinyin.txt in Resources */,
 				73943BD71EAF9F0E00677F2B /* allCities.plist in Resources */,
 				73189A541EB2DE6B00EBCD13 /* XMGWebViewController.xib in Resources */,
@@ -1422,11 +1536,15 @@
 				73189AB31EB35B9600EBCD13 /* PoiSearchDemoViewController.xib in Resources */,
 				73865F6C1E6657A500ADC3BA /* LAHomeViewController.xib in Resources */,
 				73865F711E6657C700ADC3BA /* LANearbyViewController.xib in Resources */,
+				73189AEB1EB3923900EBCD13 /* LASplitViewController.xib in Resources */,
+				73189AF91EB3967700EBCD13 /* LADailyViewController.xib in Resources */,
 				73943BD91EAF9F0E00677F2B /* background_cloudy.jpeg in Resources */,
 				73865F121E6412C200ADC3BA /* Assets.xcassets in Resources */,
 				73189ADB1EB36C3500EBCD13 /* DistrictSearchDemoViewController.xib in Resources */,
 				73189AD21EB36A9000EBCD13 /* BusLineSearchViewController.xib in Resources */,
+				73189AF01EB3948900EBCD13 /* LASplitViewCell.xib in Resources */,
 				73189ABC1EB364EB00EBCD13 /* RouteSearchDemoViewController.xib in Resources */,
+				73189B031EB39D5700EBCD13 /* LAMineHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1503,6 +1621,7 @@
 				7376EAD41EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m in Sources */,
 				73943BBF1EAF9EBD00677F2B /* NSObject+MJClass.m in Sources */,
 				73943BC81EAF9EBD00677F2B /* NSString+PinYin4Cocoa.m in Sources */,
+				73189AE01EB38DD200EBCD13 /* LAFriendHeaderView.m in Sources */,
 				73943BC51EAF9EBD00677F2B /* ChineseStringTool.m in Sources */,
 				73943BAF1EAF9EBD00677F2B /* AFHTTPRequestOperationManager.m in Sources */,
 				73943BB21EAF9EBD00677F2B /* AFSecurityPolicy.m in Sources */,
@@ -1516,6 +1635,7 @@
 				73943B541EAF9E8A00677F2B /* UIView+Frame.m in Sources */,
 				73943B531EAF9E8A00677F2B /* UILabel+Font.m in Sources */,
 				73189AA41EB2FE3100EBCD13 /* NSString+File.m in Sources */,
+				73189B011EB39D4300EBCD13 /* LAMineHeaderView.m in Sources */,
 				73943B561EAF9E8A00677F2B /* MainViewController.m in Sources */,
 				7376EAE21EA5D86300B3C8F7 /* LAFriendDetailController.m in Sources */,
 				73943BC21EAF9EBD00677F2B /* NSObject+MJProperty.m in Sources */,
@@ -1537,6 +1657,7 @@
 				73865F661E65685D00ADC3BA /* LALoginController.m in Sources */,
 				73189A8D1EB2FC1400EBCD13 /* CWCommonViewController.m in Sources */,
 				73189A771EB2FA5500EBCD13 /* CWProfileViewController.m in Sources */,
+				73189AFD1EB39A7A00EBCD13 /* LADailyViewCell.m in Sources */,
 				73943BB31EAF9EBD00677F2B /* AFURLConnectionOperation.m in Sources */,
 				73943B5E1EAF9E8A00677F2B /* SRLocationTool.m in Sources */,
 				73189A721EB2EF6700EBCD13 /* LocationDemoViewController.m in Sources */,
@@ -1566,6 +1687,7 @@
 				73189AC41EB3659200EBCD13 /* UIImage+Rotate.m in Sources */,
 				73189A971EB2FD1000EBCD13 /* UIImage+Extension.m in Sources */,
 				73943B5D1EAF9E8A00677F2B /* SRHTTPSessionManager.m in Sources */,
+				73189AF81EB3967700EBCD13 /* LADailyViewController.m in Sources */,
 				73189AA21EB2FE3100EBCD13 /* NSDate+MJ.m in Sources */,
 				73943B631EAF9E8A00677F2B /* WeatherDetailInfoView.m in Sources */,
 				73943BC41EAF9EBD00677F2B /* ChineseString.m in Sources */,
@@ -1586,6 +1708,7 @@
 				73943BC01EAF9EBD00677F2B /* NSObject+MJCoding.m in Sources */,
 				7376EAD31EA5C59500B3C8F7 /* NSDate+CWExtension.m in Sources */,
 				73189AAA1EB30CC300EBCD13 /* CWNewfeatureViewController.m in Sources */,
+				73189AEF1EB3948900EBCD13 /* LASplitViewCell.m in Sources */,
 				73943B511EAF9E8A00677F2B /* NSString+Extension.m in Sources */,
 				73189A491EB2D8E800EBCD13 /* XMGPageView.m in Sources */,
 				73865F071E6412C200ADC3BA /* main.m in Sources */,
@@ -1606,6 +1729,7 @@
 				73943B5C1EAF9E8A00677F2B /* NowWeatherData.m in Sources */,
 				73943B5F1EAF9E8A00677F2B /* SRUserDefaults.m in Sources */,
 				73943B651EAF9E8A00677F2B /* WeatherLineChart.m in Sources */,
+				73189AEA1EB3923900EBCD13 /* LASplitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

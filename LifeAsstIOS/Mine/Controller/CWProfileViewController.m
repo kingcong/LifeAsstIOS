@@ -13,6 +13,9 @@
 #import "CWCommonLabelItem.h"
 #import "MBProgressHUD+MJ.h"
 #import "CWSettingViewController.h"
+
+#import "LAMineHeaderView.h"
+
 @interface CWProfileViewController ()
 
 @end
@@ -24,7 +27,15 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:UIBarButtonItemStyleDone target:self action:@selector(setting)];
     
+    [self setupHeaderView];
     [self setupGroups];
+}
+
+- (void)setupHeaderView
+{
+    LAMineHeaderView *headerView = [LAMineHeaderView headerView];
+    headerView.frame = CGRectMake(0, 0, kScreenWidth, 100);
+    self.tableView.tableHeaderView = headerView;
 }
 
 - (void)setting
