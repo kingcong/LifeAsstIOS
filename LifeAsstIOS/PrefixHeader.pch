@@ -9,9 +9,35 @@
 #ifndef ______PrefixHeader_pch
 #define ______PrefixHeader_pch
 
+#ifdef __OBJC__
+#import "ConstDefine.h"
+#import "UIAssistDefine.h"
+#import "UIView+Frame.h"
+#import "NSString+Extension.h"
+#import "UIApplication+Extension.h"
+#import "UILabel+Font.h"
+#import "MBProgressHUD+SR.h"
 #import "UIView+CWExtension.h"
 #import "UIBarButtonItem+Extension.h"
+#endif
+
+#ifdef DEBUG
+#define SRLog(FORMAT, ...) {\
+NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];\
+[dateFormatter setDateStyle:NSDateFormatterMediumStyle];\
+[dateFormatter setTimeStyle:NSDateFormatterShortStyle];\
+[dateFormatter setDateFormat:@"HH:mm:ss:SSSS"];\
+NSString *dateString = [dateFormatter stringFromDate:[NSDate date]];\
+fprintf(stderr,"[%s:%d %s] %s\n", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [dateString UTF8String], [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);\
+}
+#else
+#define SRLog(FORMAT, ...) nil
+#endif
+
+
+
 //#import "CWConst.h"
+
 
 #ifdef DEBUG
 #define CWLog(...) NSLog(__VA_ARGS__)

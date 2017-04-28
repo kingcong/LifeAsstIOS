@@ -3,5 +3,6 @@ target "LifeAsstIOS" do
 
      pod 'MJRefresh'
      pod 'SVProgressHUD'
+     pod 'BaiduMapKit'
 
 end
