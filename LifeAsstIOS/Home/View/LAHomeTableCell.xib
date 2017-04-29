@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,27 +20,27 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="feU-Sb-eMQ">
                         <rect key="frame" x="5" y="5" width="100" height="79.5"/>
-                        <color key="backgroundColor" red="1" green="0.074343003369999994" blue="0.112278286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="08f-9B-8V2"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4k-Xj-kox">
-                        <rect key="frame" x="125" y="5" width="45" height="21"/>
+                        <rect key="frame" x="125" y="5" width="185" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnW-6e-PP9">
-                        <rect key="frame" x="125" y="46" width="69.5" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="125" y="46" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="feU-Sb-eMQ" secondAttribute="bottom" constant="5" id="5xa-Oc-wNa"/>
                     <constraint firstItem="ZnW-6e-PP9" firstAttribute="leading" secondItem="feU-Sb-eMQ" secondAttribute="trailing" constant="20" id="CiT-P1-cPR"/>
+                    <constraint firstAttribute="trailing" secondItem="M4k-Xj-kox" secondAttribute="trailing" constant="10" id="EZp-z3-wQS"/>
                     <constraint firstItem="ZnW-6e-PP9" firstAttribute="top" secondItem="M4k-Xj-kox" secondAttribute="bottom" constant="20" id="InV-Ex-BuN"/>
                     <constraint firstItem="feU-Sb-eMQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="TfB-He-OV8"/>
                     <constraint firstItem="feU-Sb-eMQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="nG7-A4-PtK"/>
@@ -48,6 +48,11 @@
                     <constraint firstItem="M4k-Xj-kox" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uzL-fd-H8O"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="feU-Sb-eMQ" id="Tq8-d2-jsI"/>
+                <outlet property="timeLab" destination="ZnW-6e-PP9" id="uuo-HK-wTK"/>
+                <outlet property="titleLab" destination="M4k-Xj-kox" id="n5n-Ru-YbW"/>
+            </connections>
             <point key="canvasLocation" x="34" y="95.5"/>
         </tableViewCell>
     </objects>

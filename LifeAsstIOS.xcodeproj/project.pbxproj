@@ -65,6 +65,10 @@
 		73189B031EB39D5700EBCD13 /* LAMineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73189B021EB39D5700EBCD13 /* LAMineHeaderView.xib */; };
 		735A69CE1E726E51006E3748 /* LATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 735A69CD1E726E51006E3748 /* LATabBarController.m */; };
 		735A69D11E726E6F006E3748 /* LANavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 735A69D01E726E6F006E3748 /* LANavgationController.m */; };
+		736A31211EB444C900981415 /* LAHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 736A311F1EB444C900981415 /* LAHelpViewController.m */; };
+		736A31221EB444C900981415 /* LAHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 736A31201EB444C900981415 /* LAHelpViewController.xib */; };
+		736A31251EB47A3300981415 /* LASplitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 736A31241EB47A3300981415 /* LASplitModel.m */; };
+		736A31281EB48FF000981415 /* LAWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 736A31271EB48FF000981415 /* LAWeatherModel.m */; };
 		7376EAD31EA5C59500B3C8F7 /* NSDate+CWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EACE1EA5C59500B3C8F7 /* NSDate+CWExtension.m */; };
 		7376EAD41EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EAD01EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m */; };
 		7376EAD51EA5C59500B3C8F7 /* UIView+CWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EAD21EA5C59500B3C8F7 /* UIView+CWExtension.m */; };
@@ -277,6 +281,13 @@
 		735A69CD1E726E51006E3748 /* LATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LATabBarController.m; sourceTree = "<group>"; };
 		735A69CF1E726E6F006E3748 /* LANavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LANavgationController.h; sourceTree = "<group>"; };
 		735A69D01E726E6F006E3748 /* LANavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LANavgationController.m; sourceTree = "<group>"; };
+		736A311E1EB444C900981415 /* LAHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAHelpViewController.h; sourceTree = "<group>"; };
+		736A311F1EB444C900981415 /* LAHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAHelpViewController.m; sourceTree = "<group>"; };
+		736A31201EB444C900981415 /* LAHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAHelpViewController.xib; sourceTree = "<group>"; };
+		736A31231EB47A3300981415 /* LASplitModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LASplitModel.h; sourceTree = "<group>"; };
+		736A31241EB47A3300981415 /* LASplitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LASplitModel.m; sourceTree = "<group>"; };
+		736A31261EB48FF000981415 /* LAWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWeatherModel.h; sourceTree = "<group>"; };
+		736A31271EB48FF000981415 /* LAWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWeatherModel.m; sourceTree = "<group>"; };
 		7376EACA1EA5C39D00B3C8F7 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7376EACD1EA5C59500B3C8F7 /* NSDate+CWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CWExtension.h"; sourceTree = "<group>"; };
 		7376EACE1EA5C59500B3C8F7 /* NSDate+CWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CWExtension.m"; sourceTree = "<group>"; };
@@ -764,6 +775,8 @@
 		73189AE51EB3921E00EBCD13 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				736A31231EB47A3300981415 /* LASplitModel.h */,
+				736A31241EB47A3300981415 /* LASplitModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -811,6 +824,40 @@
 				73189AFA1EB39A7A00EBCD13 /* LADailyViewCell.h */,
 				73189AFB1EB39A7A00EBCD13 /* LADailyViewCell.m */,
 				73189AFC1EB39A7A00EBCD13 /* LADailyViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		736A311A1EB4449400981415 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				736A311B1EB4449400981415 /* Controller */,
+				736A311C1EB4449400981415 /* Model */,
+				736A311D1EB4449400981415 /* View */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		736A311B1EB4449400981415 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				736A311E1EB444C900981415 /* LAHelpViewController.h */,
+				736A311F1EB444C900981415 /* LAHelpViewController.m */,
+				736A31201EB444C900981415 /* LAHelpViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		736A311C1EB4449400981415 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		736A311D1EB4449400981415 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -913,6 +960,7 @@
 		73865F481E6567F700ADC3BA /* Friend */ = {
 			isa = PBXGroup;
 			children = (
+				736A311A1EB4449400981415 /* Help */,
 				73189AF11EB3962500EBCD13 /* Daily */,
 				73189AE31EB3921E00EBCD13 /* Split */,
 				73865F491E6567F700ADC3BA /* Controller */,
@@ -974,6 +1022,8 @@
 		73865F4E1E6567F700ADC3BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				736A31261EB48FF000981415 /* LAWeatherModel.h */,
+				736A31271EB48FF000981415 /* LAWeatherModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1534,6 +1584,7 @@
 				73943BB81EAF9EBD00677F2B /* MBProgressHUD.bundle in Resources */,
 				73189AC11EB3655900EBCD13 /* WayPointRouteSearchDemoViewController.xib in Resources */,
 				73189AB31EB35B9600EBCD13 /* PoiSearchDemoViewController.xib in Resources */,
+				736A31221EB444C900981415 /* LAHelpViewController.xib in Resources */,
 				73865F6C1E6657A500ADC3BA /* LAHomeViewController.xib in Resources */,
 				73865F711E6657C700ADC3BA /* LANearbyViewController.xib in Resources */,
 				73189AEB1EB3923900EBCD13 /* LASplitViewController.xib in Resources */,
@@ -1626,6 +1677,7 @@
 				73943BAF1EAF9EBD00677F2B /* AFHTTPRequestOperationManager.m in Sources */,
 				73943BB21EAF9EBD00677F2B /* AFSecurityPolicy.m in Sources */,
 				73943BC61EAF9EBD00677F2B /* ChineseToPinyinResource.m in Sources */,
+				736A31281EB48FF000981415 /* LAWeatherModel.m in Sources */,
 				73943BC71EAF9EBD00677F2B /* HanyuPinyinOutputFormat.m in Sources */,
 				73189AB21EB35B9600EBCD13 /* PoiSearchDemoViewController.mm in Sources */,
 				73189AB61EB35E8D00EBCD13 /* TZNavigationViewController.m in Sources */,
@@ -1635,6 +1687,7 @@
 				73943B541EAF9E8A00677F2B /* UIView+Frame.m in Sources */,
 				73943B531EAF9E8A00677F2B /* UILabel+Font.m in Sources */,
 				73189AA41EB2FE3100EBCD13 /* NSString+File.m in Sources */,
+				736A31251EB47A3300981415 /* LASplitModel.m in Sources */,
 				73189B011EB39D4300EBCD13 /* LAMineHeaderView.m in Sources */,
 				73943B561EAF9E8A00677F2B /* MainViewController.m in Sources */,
 				7376EAE21EA5D86300B3C8F7 /* LAFriendDetailController.m in Sources */,
@@ -1651,6 +1704,7 @@
 				735A69D11E726E6F006E3748 /* LANavgationController.m in Sources */,
 				73943B621EAF9E8A00677F2B /* SRWeatherDataTool.m in Sources */,
 				73943BBA1EAF9EBD00677F2B /* MJExtensionConst.m in Sources */,
+				736A31211EB444C900981415 /* LAHelpViewController.m in Sources */,
 				73943BBD1EAF9EBD00677F2B /* MJPropertyKey.m in Sources */,
 				73865F701E6657C700ADC3BA /* LANearbyViewController.m in Sources */,
 				73943B521EAF9E8A00677F2B /* UIApplication+Extension.m in Sources */,

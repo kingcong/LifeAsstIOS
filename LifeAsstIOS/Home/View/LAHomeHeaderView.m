@@ -16,6 +16,19 @@
     [super awakeFromNib];
 
     [self addScrollPageView];
+    
+}
+
+- (void)setWeatherModel:(LAWeatherModel *)weatherModel
+{
+    _weatherModel = weatherModel;
+    
+    self.currentTemp.text = [NSString stringWithFormat:@"%@℃",weatherModel.tmp];
+    self.airQuality.text = weatherModel.txt;
+    self.cityLab.text = @"苏州";
+    self.locationLab.text = [NSString stringWithFormat:@"PM:%@",weatherModel.pm25];
+    self.airStateLab.text = weatherModel.qlty;
+    self.airImageView.image = [UIImage imageNamed:weatherModel.imageName];
 }
 
 - (void)addScrollPageView
@@ -52,6 +65,7 @@
         [self.delegate styleClick:sender.tag];
     }
 }
+
 
 
 @end

@@ -18,6 +18,9 @@
                 <searchBar contentMode="redraw" placeholder="请输入搜索内容" translatesAutoresizingMaskIntoConstraints="NO" id="vHk-BC-tSi">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="6uf-c8-Q8F"/>
+                    </connections>
                 </searchBar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d33-fu-gla" userLabel="pageView">
                     <rect key="frame" x="0.0" y="44" width="375" height="80"/>
@@ -29,31 +32,31 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tae-Mj-aJc">
-                            <rect key="frame" x="0.0" y="0.0" width="42" height="80"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
+                            <rect key="frame" x="10" y="0.0" width="70.5" height="80"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                            <color key="textColor" red="1" green="0.074343003369999994" blue="0.112278286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="1" green="0.074343003369999994" blue="0.112278286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRd-Qr-mwB">
-                            <rect key="frame" x="62" y="5" width="42" height="21"/>
+                            <rect key="frame" x="100.5" y="5" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bt-JY-0CS">
-                            <rect key="frame" x="119" y="5" width="42" height="21"/>
+                            <rect key="frame" x="157.5" y="5" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlE-vM-yDt">
-                            <rect key="frame" x="62" y="54" width="42" height="21"/>
+                            <rect key="frame" x="100.5" y="54" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzb-i6-TuL">
-                            <rect key="frame" x="119" y="54" width="42" height="21"/>
+                            <rect key="frame" x="157.5" y="54" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -67,7 +70,6 @@
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.9512697269" blue="0.63209642290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="rzb-i6-TuL" secondAttribute="bottom" constant="5" id="0Ln-pa-DRT"/>
                         <constraint firstAttribute="bottom" secondItem="Tae-Mj-aJc" secondAttribute="bottom" id="50D-ca-oZb"/>
@@ -78,7 +80,7 @@
                         <constraint firstAttribute="trailing" secondItem="h3P-O4-r9U" secondAttribute="trailing" constant="20" id="I1v-H5-KdA"/>
                         <constraint firstAttribute="bottom" secondItem="TlE-vM-yDt" secondAttribute="bottom" constant="5" id="MhL-h9-tAc"/>
                         <constraint firstItem="rzb-i6-TuL" firstAttribute="leading" secondItem="TlE-vM-yDt" secondAttribute="trailing" constant="15" id="OB0-NI-232"/>
-                        <constraint firstItem="Tae-Mj-aJc" firstAttribute="leading" secondItem="d33-fu-gla" secondAttribute="leading" id="URW-0g-134"/>
+                        <constraint firstItem="Tae-Mj-aJc" firstAttribute="leading" secondItem="d33-fu-gla" secondAttribute="leading" constant="10" id="URW-0g-134"/>
                         <constraint firstItem="5Bt-JY-0CS" firstAttribute="top" secondItem="d33-fu-gla" secondAttribute="top" constant="5" id="g63-9Y-5lF"/>
                         <constraint firstItem="wRd-Qr-mwB" firstAttribute="leading" secondItem="Tae-Mj-aJc" secondAttribute="trailing" constant="20" id="giC-Tz-P54"/>
                         <constraint firstAttribute="height" constant="80" id="iU6-dL-rK5"/>
@@ -220,7 +222,6 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.72288800760000005" green="0.96813871330000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="d33-fu-gla" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="24u-g9-0g5"/>
                 <constraint firstItem="vHk-BC-tSi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="28t-zf-a6D"/>
@@ -239,8 +240,15 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="airImageView" destination="h3P-O4-r9U" id="DNH-OX-ix6"/>
+                <outlet property="airQuality" destination="wRd-Qr-mwB" id="5HF-1r-YuO"/>
+                <outlet property="airStateLab" destination="rzb-i6-TuL" id="612-J9-uOe"/>
+                <outlet property="cityLab" destination="5Bt-JY-0CS" id="3VL-YQ-KkA"/>
+                <outlet property="currentTemp" destination="Tae-Mj-aJc" id="zck-4i-15f"/>
+                <outlet property="locationLab" destination="TlE-vM-yDt" id="VRD-3H-PVV"/>
                 <outlet property="pageView" destination="w9u-yx-r1X" id="TZa-0z-k78"/>
                 <outlet property="pageViewClick" destination="d33-fu-gla" id="PQN-Bm-etv"/>
+                <outlet property="searchBar" destination="vHk-BC-tSi" id="ZfA-jO-Wlj"/>
             </connections>
             <point key="canvasLocation" x="-61.5" y="-32"/>
         </view>

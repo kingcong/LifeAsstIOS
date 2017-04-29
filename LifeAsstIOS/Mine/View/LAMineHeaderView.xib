@@ -44,6 +44,7 @@
                     </constraints>
                 </imageView>
             </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="KDF-a6-TqS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0dQ-WY-p5g"/>
                 <constraint firstItem="KDF-a6-TqS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="KB7-WJ-hag"/>

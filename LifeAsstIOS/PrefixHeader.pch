@@ -22,6 +22,7 @@
 #import "UtilsHeader.h"
 #import "WKWebViewController.h"
 #import "UIImage+Extension.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 #endif
 
 #ifdef DEBUG

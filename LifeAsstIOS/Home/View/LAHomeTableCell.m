@@ -15,10 +15,13 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setSplitModel:(LASplitModel *)splitModel
+{
+    _splitModel = splitModel;
+    
+    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:splitModel.thumbnail_pic_s]];
+    self.titleLab.text = splitModel.title;
+    self.timeLab.text = splitModel.date;
 }
 
 @end

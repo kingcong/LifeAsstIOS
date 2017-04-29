@@ -60,7 +60,7 @@ static NSString * const kAllCitiesDicsFileName  = @"allCitiesDics.plist";
     if (commonCities.count > 0) {
         cityname = commonCities[0];
     } else {
-        cityname = @"北京";
+        cityname = @"苏州";
     }
     return cityname;
 }

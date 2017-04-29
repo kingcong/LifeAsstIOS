@@ -11,6 +11,7 @@
 #import "LAFriendHeaderView.h"
 #import "LASplitViewController.h"
 #import "LADailyViewController.h"
+#import "LAHelpViewController.h"
 
 #define kHeaderViewHeight 80
 
@@ -65,10 +66,7 @@
    LADailyViewController *video = [[LADailyViewController alloc] init];
     [self addChildViewController:video];
     
-   LAFriendDetailController *voice = [[LAFriendDetailController alloc] init];
-    [self addChildViewController:voice];
-    
-   LAFriendDetailController *picture = [[LAFriendDetailController alloc] init];
+   LAHelpViewController *picture = [[LAHelpViewController alloc] init];
     [self addChildViewController:picture];
     
 }
@@ -96,7 +94,7 @@
     self.indicatorView = indicatorView;
     
     // 内部的子标签
-    NSArray *titles = @[@"吐槽", @"推荐", @"失物招领", @"求助"];
+    NSArray *titles = @[@"吐槽", @"我的日常", @"求助"];
     CGFloat width = titlesView.width / titles.count;
     CGFloat height = titlesView.height;
     for (NSInteger i = 0; i<titles.count; i++) {
