@@ -69,6 +69,16 @@
 		736A31221EB444C900981415 /* LAHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 736A31201EB444C900981415 /* LAHelpViewController.xib */; };
 		736A31251EB47A3300981415 /* LASplitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 736A31241EB47A3300981415 /* LASplitModel.m */; };
 		736A31281EB48FF000981415 /* LAWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 736A31271EB48FF000981415 /* LAWeatherModel.m */; };
+		736A31331EB49BF900981415 /* bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 736A312A1EB49BF900981415 /* bg.jpeg */; };
+		736A31341EB49BF900981415 /* icon_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 736A312B1EB49BF900981415 /* icon_hand.png */; };
+		736A31351EB49BF900981415 /* iconfont-password.png in Resources */ = {isa = PBXBuildFile; fileRef = 736A312C1EB49BF900981415 /* iconfont-password.png */; };
+		736A31361EB49BF900981415 /* iconfont-user.png in Resources */ = {isa = PBXBuildFile; fileRef = 736A312D1EB49BF900981415 /* iconfont-user.png */; };
+		736A31371EB49BF900981415 /* owl-login-arm-left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 736A312E1EB49BF900981415 /* owl-login-arm-left@2x.png */; };
+		736A31381EB49BF900981415 /* owl-login-arm-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 736A312F1EB49BF900981415 /* owl-login-arm-right@2x.png */; };
+		736A31391EB49BF900981415 /* owl-login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 736A31301EB49BF900981415 /* owl-login@2x.png */; };
+		736A313A1EB49BF900981415 /* WSLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 736A31321EB49BF900981415 /* WSLoginView.m */; };
+		736A313C1EB49F5E00981415 /* qidong.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 736A313B1EB49F5E00981415 /* qidong.mp4 */; };
+		736A31401EB49F7700981415 /* WSMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 736A313F1EB49F7700981415 /* WSMovieController.m */; };
 		7376EAD31EA5C59500B3C8F7 /* NSDate+CWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EACE1EA5C59500B3C8F7 /* NSDate+CWExtension.m */; };
 		7376EAD41EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EAD01EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m */; };
 		7376EAD51EA5C59500B3C8F7 /* UIView+CWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EAD21EA5C59500B3C8F7 /* UIView+CWExtension.m */; };
@@ -288,6 +298,18 @@
 		736A31241EB47A3300981415 /* LASplitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LASplitModel.m; sourceTree = "<group>"; };
 		736A31261EB48FF000981415 /* LAWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWeatherModel.h; sourceTree = "<group>"; };
 		736A31271EB48FF000981415 /* LAWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWeatherModel.m; sourceTree = "<group>"; };
+		736A312A1EB49BF900981415 /* bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpeg; sourceTree = "<group>"; };
+		736A312B1EB49BF900981415 /* icon_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hand.png; sourceTree = "<group>"; };
+		736A312C1EB49BF900981415 /* iconfont-password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-password.png"; sourceTree = "<group>"; };
+		736A312D1EB49BF900981415 /* iconfont-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-user.png"; sourceTree = "<group>"; };
+		736A312E1EB49BF900981415 /* owl-login-arm-left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "owl-login-arm-left@2x.png"; sourceTree = "<group>"; };
+		736A312F1EB49BF900981415 /* owl-login-arm-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "owl-login-arm-right@2x.png"; sourceTree = "<group>"; };
+		736A31301EB49BF900981415 /* owl-login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "owl-login@2x.png"; sourceTree = "<group>"; };
+		736A31311EB49BF900981415 /* WSLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLoginView.h; sourceTree = "<group>"; };
+		736A31321EB49BF900981415 /* WSLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLoginView.m; sourceTree = "<group>"; };
+		736A313B1EB49F5E00981415 /* qidong.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = qidong.mp4; sourceTree = "<group>"; };
+		736A313E1EB49F7700981415 /* WSMovieController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMovieController.h; sourceTree = "<group>"; };
+		736A313F1EB49F7700981415 /* WSMovieController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMovieController.m; sourceTree = "<group>"; };
 		7376EACA1EA5C39D00B3C8F7 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7376EACD1EA5C59500B3C8F7 /* NSDate+CWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CWExtension.h"; sourceTree = "<group>"; };
 		7376EACE1EA5C59500B3C8F7 /* NSDate+CWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CWExtension.m"; sourceTree = "<group>"; };
@@ -862,6 +884,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		736A31291EB49BF900981415 /* WSLoginView */ = {
+			isa = PBXGroup;
+			children = (
+				736A312A1EB49BF900981415 /* bg.jpeg */,
+				736A312B1EB49BF900981415 /* icon_hand.png */,
+				736A312C1EB49BF900981415 /* iconfont-password.png */,
+				736A312D1EB49BF900981415 /* iconfont-user.png */,
+				736A312E1EB49BF900981415 /* owl-login-arm-left@2x.png */,
+				736A312F1EB49BF900981415 /* owl-login-arm-right@2x.png */,
+				736A31301EB49BF900981415 /* owl-login@2x.png */,
+				736A31311EB49BF900981415 /* WSLoginView.h */,
+				736A31321EB49BF900981415 /* WSLoginView.m */,
+			);
+			path = WSLoginView;
+			sourceTree = "<group>";
+		};
+		736A313D1EB49F7700981415 /* LAGuide */ = {
+			isa = PBXGroup;
+			children = (
+				736A313E1EB49F7700981415 /* WSMovieController.h */,
+				736A313F1EB49F7700981415 /* WSMovieController.m */,
+			);
+			path = LAGuide;
+			sourceTree = "<group>";
+		};
 		7376EACB1EA5C59500B3C8F7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -1319,6 +1366,8 @@
 		73943B671EAF9EBD00677F2B /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				736A313D1EB49F7700981415 /* LAGuide */,
+				736A31291EB49BF900981415 /* WSLoginView */,
 				73189A5C1EB2E6C100EBCD13 /* Calendar */,
 				73189A551EB2DEBF00EBCD13 /* NJKWebViewProgress */,
 				73189A4C1EB2DE6B00EBCD13 /* WebView */,
@@ -1430,6 +1479,7 @@
 		73943BCF1EAF9F0E00677F2B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				736A313B1EB49F5E00981415 /* qidong.mp4 */,
 				73189AC81EB3697900EBCD13 /* icon_search_bg@2x.png */,
 				73943BD01EAF9F0E00677F2B /* allCities.plist */,
 				73943BD11EAF9F0E00677F2B /* allCitiesDics.plist */,
@@ -1563,6 +1613,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736A313C1EB49F5E00981415 /* qidong.mp4 in Resources */,
+				736A31351EB49BF900981415 /* iconfont-password.png in Resources */,
 				73943BDB1EAF9F0E00677F2B /* background_snowy.jpeg in Resources */,
 				7376EADA1EA5CA1700B3C8F7 /* LAHomeHeaderView.xib in Resources */,
 				73865F791E6657EE00ADC3BA /* LAMineViewController.xib in Resources */,
@@ -1581,16 +1633,22 @@
 				73943BD81EAF9F0E00677F2B /* allCitiesDics.plist in Resources */,
 				73865F671E65685D00ADC3BA /* LALoginController.xib in Resources */,
 				73943BDD1EAF9F0E00677F2B /* hotCities.plist in Resources */,
+				736A31331EB49BF900981415 /* bg.jpeg in Resources */,
 				73943BB81EAF9EBD00677F2B /* MBProgressHUD.bundle in Resources */,
 				73189AC11EB3655900EBCD13 /* WayPointRouteSearchDemoViewController.xib in Resources */,
 				73189AB31EB35B9600EBCD13 /* PoiSearchDemoViewController.xib in Resources */,
 				736A31221EB444C900981415 /* LAHelpViewController.xib in Resources */,
+				736A31361EB49BF900981415 /* iconfont-user.png in Resources */,
+				736A31371EB49BF900981415 /* owl-login-arm-left@2x.png in Resources */,
 				73865F6C1E6657A500ADC3BA /* LAHomeViewController.xib in Resources */,
 				73865F711E6657C700ADC3BA /* LANearbyViewController.xib in Resources */,
 				73189AEB1EB3923900EBCD13 /* LASplitViewController.xib in Resources */,
+				736A31391EB49BF900981415 /* owl-login@2x.png in Resources */,
 				73189AF91EB3967700EBCD13 /* LADailyViewController.xib in Resources */,
 				73943BD91EAF9F0E00677F2B /* background_cloudy.jpeg in Resources */,
+				736A31381EB49BF900981415 /* owl-login-arm-right@2x.png in Resources */,
 				73865F121E6412C200ADC3BA /* Assets.xcassets in Resources */,
+				736A31341EB49BF900981415 /* icon_hand.png in Resources */,
 				73189ADB1EB36C3500EBCD13 /* DistrictSearchDemoViewController.xib in Resources */,
 				73189AD21EB36A9000EBCD13 /* BusLineSearchViewController.xib in Resources */,
 				73189AF01EB3948900EBCD13 /* LASplitViewCell.xib in Resources */,
@@ -1668,6 +1726,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736A31401EB49F7700981415 /* WSMovieController.m in Sources */,
 				73189AC71EB365C200EBCD13 /* RouteAnnotation.mm in Sources */,
 				7376EAD41EA5C59500B3C8F7 /* UIBarButtonItem+Extension.m in Sources */,
 				73943BBF1EAF9EBD00677F2B /* NSObject+MJClass.m in Sources */,
@@ -1713,6 +1772,7 @@
 				73189A771EB2FA5500EBCD13 /* CWProfileViewController.m in Sources */,
 				73189AFD1EB39A7A00EBCD13 /* LADailyViewCell.m in Sources */,
 				73943BB31EAF9EBD00677F2B /* AFURLConnectionOperation.m in Sources */,
+				736A313A1EB49BF900981415 /* WSLoginView.m in Sources */,
 				73943B5E1EAF9E8A00677F2B /* SRLocationTool.m in Sources */,
 				73189A721EB2EF6700EBCD13 /* LocationDemoViewController.m in Sources */,
 				73943B5B1EAF9E8A00677F2B /* HourlyWeatherData.m in Sources */,

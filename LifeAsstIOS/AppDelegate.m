@@ -11,6 +11,8 @@
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
 #import "CWNewfeatureViewController.h"
 
+#import "WSMovieController.h"
+
 @interface AppDelegate () <BMKGeneralDelegate>
 
 @end
@@ -26,17 +28,6 @@ BMKMapManager* _mapManager;
     // 要使用百度地图，请先启动BaiduMapManager
     _mapManager = [[BMKMapManager alloc]init];
     
-    /**
-     *百度地图SDK所有接口均支持百度坐标（BD09）和国测局坐标（GCJ02），用此方法设置您使用的坐标类型.
-     *默认是BD09（BMK_COORDTYPE_BD09LL）坐标.
-     *如果需要使用GCJ02坐标，需要设置CoordinateType为：BMK_COORDTYPE_COMMON.
-     */
-//    if ([BMKMapManager setCoordinateTypeUsedInBaiduMapSDK:BMK_COORDTYPE_BD09LL]) {
-//        NSLog(@"经纬度类型设置成功");
-//    } else {
-//        NSLog(@"经纬度类型设置失败");
-//    }
-    
     BOOL ret = [_mapManager start:@"uiQE090GOsovXxp7FyvFDreO9VGGEayb" generalDelegate:self];
     if (!ret) {
         NSLog(@"manager start failed!");
@@ -45,9 +36,23 @@ BMKMapManager* _mapManager;
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     
-    LALoginController *vc = [[LALoginController alloc] init];
+//    LALoginController *vc = [[LALoginController alloc] init];
 //    CWNewfeatureViewController *vc = [[CWNewfeatureViewController alloc] init];
-    self.window.rootViewController = vc;
+//    self.window.rootViewController = vc;
+    
+    BOOL isFirstLogin = [[[NSUserDefaults standardUserDefaults] objectForKey:@"isFirstLogin"] boolValue];
+    if (!isFirstLogin) {
+        //是第一次
+        WSMovieController *wsCtrl = [[WSMovieController alloc]init];
+        wsCtrl.movieURL = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"qidong"ofType:@"mp4"]];
+        self.window.rootViewController = wsCtrl;
+        [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"isFirstLogin"];
+    }else{
+        //不是首次启动
+        LALoginController *vc = [[LALoginController alloc] init];
+//        CWNewfeatureViewController *vc = [[CWNewfeatureViewController alloc] init];
+        self.window.rootViewController = vc;
+    }
     
     return YES;
 }
