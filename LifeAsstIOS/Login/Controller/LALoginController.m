@@ -34,6 +34,11 @@
     [wsLoginV setClickBlock:^(NSString *textField1Text, NSString *textField2Text) {
         
         if ([textField1Text  isEqual: @"wangcong"] && [textField2Text  isEqual: @"123456"]) {
+            
+            [[NSUserDefaults standardUserDefaults] setObject:@"userName" forKey:@"wangcong"];
+            [[NSUserDefaults standardUserDefaults] setObject:@"password" forKey:@"123456"
+            ];
+            
             LATabBarController *tabbarVc = [[LATabBarController alloc] init];
             
             UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
